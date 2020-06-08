@@ -16,5 +16,9 @@ code {
     monospace;
 }
 
+.no-padding {
+  padding: 0px;
+}
+
 
 /* A18276     d4aa7d      efd09e*/

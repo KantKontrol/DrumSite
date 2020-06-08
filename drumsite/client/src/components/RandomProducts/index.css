@@ -1,0 +1,10 @@
+.ran-prod-style {
+    background-color: #A18276;
+    min-height: 100px;
+}
+
+.product-area {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
