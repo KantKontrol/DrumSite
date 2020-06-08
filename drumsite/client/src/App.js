@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Master from "./pages/Master";
 
 function App() {
   return (
-    <div >
-    </div>
+    <Master />
   );
 }
 
