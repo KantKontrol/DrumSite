@@ -5,7 +5,7 @@ import RandomProducts from "../components/RandomProducts";
 export default function Home(){
 
     return (
-        <div className="container-fluid no-padding">
+        <div className="">
             <Hero text="Welcome!" />
             <div className="row">
                 <div className="col-2">

@@ -1,6 +1,9 @@
 .ran-prod-style {
-    background-color: #A18276;
+    background-color: #d4aa7d;
     min-height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding:5px;
 }
 
 .product-area {
