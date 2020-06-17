@@ -19,6 +19,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/drumTest", {
 });
 
 // Link API Routes here
+require("./routes/products")(app);
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
