@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
-const Products = require("../models/products");
+const Product = require("../models/product");
 
 module.exports = (app) => {
 
     app.get("/products", (req, res) => {
-        Products.find({}).then(data => {
+        Product.find({}).then(data => {
             res.json(data);
         });
     });
