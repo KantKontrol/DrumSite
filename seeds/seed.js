@@ -1,15 +1,13 @@
 const Product = require("../models/product");
 const mongoose = require("mongoose");
 
-
 async function populateDatabase(){
-
     const fakeData = [
         {
             title: "Drum Shelf",
             image: "https://via.placeholder.com/50",
             desc: "A simple artistic shelf",
-            price: 75.00
+            price: 74.99
         },
         {
             title: "Drum Table",
