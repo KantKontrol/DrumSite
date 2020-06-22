@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css"
 import ProductCard from "../ProductCard";
 
@@ -7,7 +7,14 @@ import ProductCard from "../ProductCard";
 
 export default function RandomProducts(){
 
+    const [latestProducts, setLatestProducts] = useState([]);
 
+    useEffect(() => {
+        let rendered = true; //add API util for this
+
+
+        return () => rendered = false;
+    }, []);
 
     return (
         <div>
