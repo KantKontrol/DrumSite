@@ -10,6 +10,7 @@ export default function ProductCard(props){
             <div className="card-body">
                 <h5 className="product-card-title">{props.title ? props.title : "Sample Text"}</h5>
                 <p className="product-card-text">{props.desc ? props.desc : "Description of product here"}</p>
+                <p>{ "$" + props.price}</p>
                 <a href="#" className="btn btn-primary">Add to Cart</a>
             </div>
         </div>

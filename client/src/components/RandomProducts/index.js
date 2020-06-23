@@ -31,7 +31,7 @@ export default function RandomProducts(){
             </div>
             <div className="row ran-prod-style">
                 { latestProducts.length > 0 ? latestProducts.map(e => {
-                    return <ProductCard key={e._id} image={e.image} title={e.title} desc={e.desc} />
+                    return <ProductCard key={e._id} image={e.image} title={e.title} desc={e.desc} price={e.price} />
                 }) : <div></div> }
             </div>
         </div>
