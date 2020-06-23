@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./index.css"
+import "./index.css";
+import API from "../../utils/API";
 import ProductCard from "../ProductCard";
-
-
 
 
 export default function RandomProducts(){
@@ -12,9 +11,18 @@ export default function RandomProducts(){
     useEffect(() => {
         let rendered = true; //add API util for this
 
+        if(rendered){
+            getLatestProducts();
+        }
 
         return () => rendered = false;
     }, []);
+
+    function getLatestProducts(){
+        API.getLatestProducts().then(res => {
+            setLatestProducts(res.data);
+        });
+    }
 
     return (
         <div>
@@ -22,9 +30,9 @@ export default function RandomProducts(){
                 <div className="col-12"><h4 className="title">Recently added...</h4></div>
             </div>
             <div className="row ran-prod-style">
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
+                { latestProducts.length > 0 ? latestProducts.map(e => {
+                    return <ProductCard key={e._id} image={e.image} title={e.title} desc={e.desc} />
+                }) : <div></div> }
             </div>
         </div>
     );
