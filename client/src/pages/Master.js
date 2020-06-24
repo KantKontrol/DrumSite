@@ -16,20 +16,29 @@ export default function Master(){
         numInCart: 0,
         addToCart: function(product){
             let found = false;
-        
-            for(let i =0; i < globalState.cartItems.length;i++){
-                if(globalState.cartItems[i].id === product.id){
 
+            let items = globalState.cartItems;
+            let currentInCart = globalState.numInCart;
+            
+        
+            for(let i = 0; i < items.length;i++){ //iterates and checks if item exists in cart
+                if(items[i].id === product.id){
                     found = true;
-                    globalState.cartItems[i].quantity++;
+                    let updateItem = items[i];
+                    updateItem.quantity+=1;
                     break;
                 }
             }
 
-            if(!found){
+            if(!found){//if it is not in the cart it assigns it a quantity and adds it to the cart
                 product.quantity = 1;
-                globalState.cartItems.push(product);
-            } 
+                items.push(product);
+            }  
+
+    
+            setGlobalState((prevGlobalState) => {
+                return { ...globalState, cartItems: items, numInCart: prevGlobalState.numInCart + 1 }
+            });
         }
     });
 

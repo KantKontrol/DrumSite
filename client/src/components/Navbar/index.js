@@ -1,8 +1,12 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import GlobalContext from "../../utils/GlobalContext";
 
 
-export default function Navbar(){
+export default function Navbar(props){
+
+    let c = React.useContext(GlobalContext);
+ 
 
 
     return (
@@ -21,10 +25,11 @@ export default function Navbar(){
                         <Link className="nav-link" to="/products">Products</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/cart"><i className="fas fa-shopping-cart"></i></Link>
+                        <Link className="nav-link" to="/cart"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">{c.numInCart}</span></Link>
                     </li>
                 </ul>
             </div>
+            {console.log("render")}
         </nav>
     );
 }
