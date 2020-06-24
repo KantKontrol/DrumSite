@@ -14,7 +14,7 @@ export default function Products(){
         }
 
         return () => rendered = false;
-    });
+    }, []);
 
     function getProducts(){
         API.getAllProducts().then(res => {
