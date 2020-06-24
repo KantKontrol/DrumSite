@@ -1,0 +1,31 @@
+.cart-style {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.cart-image {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.cart-title {
+    display: block;
+    width: max-content;
+    float: left;
+}
+
+.cart-price {
+    display: block;
+    width: max-content;
+    float: right;
+}
+
+.cart-quantity {
+    display: inline-block;
+    width: max-content;
+}
