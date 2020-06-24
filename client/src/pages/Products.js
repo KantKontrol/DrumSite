@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ProductDisplay from "../components/ProductDisplay";
 import API from "../utils/API";
 
 export default function Products(){
@@ -24,6 +25,7 @@ export default function Products(){
     return (
         <div>
             <h1>Products</h1>
+            <ProductDisplay products={products}/>
         </div>
     );
 }
