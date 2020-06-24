@@ -12,9 +12,24 @@ import GlobalContext from "../utils/GlobalContext";
 export default function Master(){
 
     const [globalState, setGlobalState] = React.useState({
+        cartItems: [],
         numInCart: 0,
-        addToCart: function(){
-            console.log("test")
+        addToCart: function(product){
+            let found = false;
+        
+            for(let i =0; i < globalState.cartItems.length;i++){
+                if(globalState.cartItems[i].id === product.id){
+
+                    found = true;
+                    globalState.cartItems[i].quantity++;
+                    break;
+                }
+            }
+
+            if(!found){
+                product.quantity = 1;
+                globalState.cartItems.push(product);
+            } 
         }
     });
 
