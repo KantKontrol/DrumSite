@@ -1,21 +1,9 @@
-import React, { createContext, useReducer, useContext } from "react";
+import { createContext } from "react";
 
-const GlobalContext = createContext();
-const { Providor } = GlobalContext;
-
-const reducer = (state, action) => {
-
-}
-
-const GlobalProvidor = ({...props}) => {
-    const [state, dispatch] = useReducer(reducer, {...props});
+const GlobalContext = createContext({
+    numInCart: 0,
+    addToCart: function() {console.log("Empty function")}
+});
 
 
-    return <Providor value={[state, dispatch]} {...props} />;
-}
-
-const useGlobalContext = () => {
-    return useContext(GlobalContext);
-}
-
-export { GlobalProvidor, useGlobalContext };
+export default GlobalContext;

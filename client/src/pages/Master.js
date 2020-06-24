@@ -4,15 +4,23 @@ import Home from "../pages/Home";
 import Products from "../pages/Products";
 import Cart from "./Cart";
 import Navbar from "../components/Navbar";
+import GlobalContext from "../utils/GlobalContext";
 
 
 
 
 export default function Master(){
 
+    const [globalState, setGlobalState] = React.useState({
+        numInCart: 0,
+        addToCart: function(){
+            console.log("test")
+        }
+    });
 
+    
     return (
-        <div>
+        <GlobalContext.Provider value={globalState}>
             <Router>
                 <Navbar />
                 <Switch>
@@ -30,6 +38,6 @@ export default function Master(){
                     </Route>
                 </Switch>               
             </Router>
-        </div>
+        </GlobalContext.Provider>
     );
 }
