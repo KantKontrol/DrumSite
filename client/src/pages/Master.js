@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "../pages/Home";
 import Products from "../pages/Products";
+import Cart from "./Cart";
 import Navbar from "../components/Navbar";
 
 
@@ -20,6 +21,9 @@ export default function Master(){
                     </Route>
                     <Route path="/products">
                         <Products />
+                    </Route>
+                    <Route path="/cart">
+                        <Cart />
                     </Route>
                     <Route path="*">
                         <h1>NO FIND!</h1>

@@ -20,6 +20,9 @@ export default function Navbar(){
                     <li className="nav-item">
                         <Link className="nav-link" to="/products">Products</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/cart"><i class="fas fa-shopping-cart"></i></Link>
+                    </li>
                 </ul>
             </div>
         </nav>
