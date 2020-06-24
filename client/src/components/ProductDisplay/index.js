@@ -6,11 +6,11 @@ export default function ProductDisplay(props){
     let { products } = props;
 
     return (
-        <div>
-            <div className="col-sm-2">
-
+        <div className="row">
+            <div className="col-md-2">
+                <h1>Test</h1>
             </div>
-            <div className="col-sm-10">
+            <div className="col-md-10">
                 <div className="row">
                     { products ? products.map(e => {
                         return <ProductCard key={e._id} image={e.image} title={e.title} desc={e.desc} price={e.price} />
