@@ -18,9 +18,7 @@ export default function Master(){
             let found = false;
 
             let items = globalState.cartItems;
-            let currentInCart = globalState.numInCart;
             
-        
             for(let i = 0; i < items.length;i++){ //iterates and checks if item exists in cart
                 if(items[i].id === product.id){
                     found = true;
@@ -34,7 +32,6 @@ export default function Master(){
                 product.quantity = 1;
                 items.push(product);
             }  
-
     
             setGlobalState((prevGlobalState) => {
                 return { ...globalState, cartItems: items, numInCart: prevGlobalState.numInCart + 1 }
