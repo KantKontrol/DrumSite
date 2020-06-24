@@ -12,7 +12,7 @@ export default function Products(){
             getProducts();
         }
 
-        return rendered = false;
+        return () => rendered = false;
     });
 
     function getProducts(){
