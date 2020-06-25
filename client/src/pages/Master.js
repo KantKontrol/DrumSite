@@ -36,6 +36,17 @@ export default function Master(){
             setGlobalState((prevGlobalState) => {
                 return { ...globalState, cartItems: items, numInCart: prevGlobalState.numInCart + 1 }
             });
+        },
+        removeFromCart: function(id){
+            let items = globalState.cartItems;
+
+            for(let i = 0; i < items.length;i++){ //iterates and checks if item exists in cart
+                if(items[i].id === id){
+                    items.splice(i,1); //removes from the array starting at index we found the item at
+                    setGlobalState({ ...globalState, cartItems: items});
+                    break;
+                }
+            }
         }
     });
 
