@@ -14,6 +14,7 @@ export default function CartItem(props){
                 <div className="cart-title">{title}</div>
                 <div className="cart-quantity">Quantity: {quantity}</div>
                 <div className="cart-price">${price}</div>
+                <div className="remove-button" onClick={() => {}}><i class="fa fa-close" style={{fontSize: 32 + "px", color: "red"}}></i></div>
             </div>
             <div className="col-1"></div>
         </div>

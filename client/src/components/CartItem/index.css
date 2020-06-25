@@ -29,3 +29,9 @@
     display: inline-block;
     width: max-content;
 }
+
+.remove-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
