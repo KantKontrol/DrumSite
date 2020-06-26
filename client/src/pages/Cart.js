@@ -9,7 +9,7 @@ export default function Cart(){
     return (
         <div>
             <div className="row">
-                <div className="col-10">
+                <div className="col-10" style={{ margin: "0px auto"}}>
                     {
                         cartItems.length > 0 ? cartItems.map(e => {
                             return <CartItem key={e.id} id={e.id} title={e.title} price={e.price} image={e.image} quantity={e.quantity} />
