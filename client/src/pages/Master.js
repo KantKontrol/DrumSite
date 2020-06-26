@@ -47,6 +47,35 @@ export default function Master(){
                     break;
                 }
             }
+        },
+        addQuantity: function(id){
+            let items = globalState.cartItems;
+            
+            for(let i = 0; i < items.length;i++){ //iterates and checks if item exists in cart
+                if(items[i].id === id){
+                    items[i].quantity += 1;
+                    setGlobalState((prevGlobalState) => {
+                        return { ...globalState, cartItems: items, numInCart: prevGlobalState.numInCart + 1 }
+                    });
+                    break;
+                }
+            }
+        },
+        removeQuantity: function(id){
+            let items = globalState.cartItems;
+            
+            for(let i = 0; i < items.length;i++){ //iterates and checks if item exists in cart
+                if(items[i].id === id){
+                    items[i].quantity -= 1;
+                    if(items[i].quantity <= 0){
+                        items.splice(i, 1);
+                    }   
+                    setGlobalState((prevGlobalState) => {
+                        return { ...globalState, cartItems: items, numInCart: prevGlobalState.numInCart - 1 }
+                    });
+                    break;
+                }
+            }
         }
     });
 

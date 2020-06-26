@@ -6,7 +6,7 @@ import GlobalContext from "../../utils/GlobalContext";
 export default function CartItem(props){
 
     const { id, title, price, image, quantity } = props;
-    const { removeFromCart } = useContext(GlobalContext);
+    const { removeFromCart, addQuantity, removeQuantity } = useContext(GlobalContext);
 
     return (
         <div className="row" id={id}>
@@ -26,11 +26,11 @@ export default function CartItem(props){
                         <div className="input-group" >
                             
                                 <div className="input-group-prepend">
-                                    <button className="btn btn-secondary" type="button" id="button-addon1"><i className="fas fa-arrow-down"></i></button>
+                                    <button className="btn btn-secondary" type="button" id="button-addon1" onClick={ () => removeQuantity(id) }><i className="fas fa-arrow-down"></i></button>
                                 </div>
                                 <div className="cart-quantity">{quantity}</div>
                                 <div className="input-group-append">
-                                    <button className="btn btn-secondary" type="button" id="button-addon2"><i className="fas fa-arrow-up"></i></button>
+                                    <button className="btn btn-secondary" type="button" id="button-addon2" onClick={ () => addQuantity(id) }><i className="fas fa-arrow-up"></i></button>
                                 </div>
                         </div>
                     </div>
