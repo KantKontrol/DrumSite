@@ -2,6 +2,8 @@
     background-color: gray;
     border-radius: 10px;
     padding: 5px;
+    font-size: large;
+    font-weight: 500;
 }
 
 
@@ -22,12 +24,13 @@
 .cart-price {
     display: block;
     width: max-content;
-    float: right;
 }
 
 .cart-quantity {
     display: inline-block;
-    width: max-content;
+    width: 25px;
+    font-size: larger;
+    text-align: center;
 }
 
 .remove-button {
