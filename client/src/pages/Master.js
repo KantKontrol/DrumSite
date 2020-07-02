@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Products from "../pages/Products";
 import Cart from "./Cart";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import GlobalContext from "../utils/GlobalContext";
 
 
@@ -97,7 +98,8 @@ export default function Master(){
                     <Route path="*">
                         <h1>NO FIND!</h1>
                     </Route>
-                </Switch>               
+                </Switch>  
+                <Footer />             
             </Router>
         </GlobalContext.Provider>
     );
