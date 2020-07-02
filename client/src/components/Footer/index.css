@@ -16,8 +16,16 @@
     transform: translateX(-50%);
 }
 
+.footer-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: large;
+}
+
 #bottom-side-text {
     position: absolute;
     bottom: 0px;
-    right: 0px;
+    right: 5px;
+    z-index: 2;
 }
