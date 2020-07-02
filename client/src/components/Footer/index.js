@@ -6,8 +6,11 @@ export default function Footer(){
 
 
     return (
-        <div class="footer-style">
+        <div className="footer-style">
 
+            <div className="main-footer-content">
+
+            </div>
 
             <div id="bottom-side-text">
                 Test

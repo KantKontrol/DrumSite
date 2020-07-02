@@ -5,6 +5,17 @@
     height: 75px;
 }
 
+.main-footer-content {
+    position: absolute;
+    width: 80%;
+    background-color: lightgray;
+    height: 65px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 #bottom-side-text {
     position: absolute;
     bottom: 0px;
