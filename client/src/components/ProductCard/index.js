@@ -14,7 +14,7 @@ export default function ProductCard(props){
                 <h5 className="product-card-title">{title ? title : "Sample Text"}</h5>
                 <p className="product-card-text">{desc ? desc : "Description of product here"}</p>
                 <p>{ "$" + price}</p>
-                <a href="#" onClick={() => addToCart({id, title, desc, image, price}) } className="btn btn-primary">Add to Cart</a>
+                {/*<a href="#" onClick={() => addToCart({id, title, desc, image, price}) } className="btn btn-primary">Add to Cart</a>*/}
             </div>
         </div>
     );
