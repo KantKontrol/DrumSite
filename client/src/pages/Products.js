@@ -10,7 +10,7 @@ export default function Products(){
         let rendered = true;
 
         if(rendered){
-            getProducts();
+           // getProducts();
         }
 
         return () => rendered = false;
@@ -25,7 +25,9 @@ export default function Products(){
     return (
         <div>
             <h1>Products</h1>
-            <ProductDisplay products={products}/>
+
+            {products.length > 0 ? <ProductDisplay products={products}/> : <img className="preloader" src="/images/preloader.gif" alt="Loading..." width="200px"></img>}
+            
         </div>
     );
 }
