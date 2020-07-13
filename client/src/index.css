@@ -27,5 +27,12 @@ code {
   margin: 0 auto;
 }
 
+.lineBreak {
+  width: 80%;
+  height: 10px;
+  background-color: #7C8483;
+  margin: 10px auto;
+}
+
 
 /* A18276     d4aa7d      efd09e*/

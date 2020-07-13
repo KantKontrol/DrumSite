@@ -22,7 +22,7 @@ export default function Navbar(props){
                         <Link className="nav-link" to="/home">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/products">Products</Link>
+                        <Link className="nav-link" to="/drums">Drums</Link>
                     </li>
                     <li className="nav-item">
                         {/*<Link className="nav-link" to="/cart"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">{c.numInCart}</span></Link>*/}

@@ -89,7 +89,7 @@ export default function Master(){
                     <Route exact path={["/", "/home"]}>
                         <Home />
                     </Route>
-                    <Route path="/products">
+                    <Route path="/drums">
                         <Products />
                     </Route>
                     <Route path="/cart">

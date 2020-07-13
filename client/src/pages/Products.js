@@ -24,10 +24,9 @@ export default function Products(){
 
     return (
         <div>
-            <h1>Products</h1>
-
+            <h1 className="mx-auto" style={{ width: "fit-content" }}>Drum Creations</h1>
+            <div className="lineBreak"></div>
             {products.length > 0 ? <ProductDisplay products={products}/> : <img className="preloader" src="/images/preloader.gif" alt="Loading..." width="80px"></img>}
-            
         </div>
     );
 }
