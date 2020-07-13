@@ -10,7 +10,7 @@ export default function ProductCard(props){
     return(
         <div className={ displayEven ? "product-card col-sm" : "product-card col-xs-12 col-sm-12 col-md-3 col-lg-3"}>
             <img src={image ? image : "https://via.placeholder.com/50"} className="card-img-top" alt="..." />
-            <div className="card-body">
+            <div className="card-body d-none">
                 <h5 className="product-card-title">{title ? title : "Sample Text"}</h5>
                 <p className="product-card-text">{desc ? desc : "Description of product here"}</p>
                 <p>{ "$" + price}</p>
