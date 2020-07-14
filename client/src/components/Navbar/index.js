@@ -6,9 +6,7 @@ import "./index.css";
 
 export default function Navbar(props){
 
-    let c = React.useContext(GlobalContext);
- 
-
+    //let c = React.useContext(GlobalContext);
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light  navbar-cus-color">
