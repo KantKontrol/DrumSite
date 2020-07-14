@@ -1,0 +1,10 @@
+.navbar-cus-color {
+    background: linear-gradient(#ABEBD2, #4d474700);
+    
+}
+
+.text-color {
+    color: black;
+    text-shadow: 2px 2px 5px #ABEBD2;
+    font-size: 1.65rem;
+}
