@@ -11,7 +11,7 @@ export default function Home(){
     return (
         <div className="">
             <Hero text="Welcome!" />
-            <div className="container no-padding">
+            <div className="container no-padding push-footer">
                 <RandomProducts />
                 <AboutJumbo lead={aboutLead} about={aboutBody} href="/about"/>
             </div>
