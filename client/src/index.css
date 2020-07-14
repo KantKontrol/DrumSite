@@ -34,11 +34,6 @@ code {
   margin: 10px auto;
 }
 
-.foot-flex {
-  display: flex !important;
-  flex-direction: column;
-}
-
 .push-footer {
   flex: 1 0 auto;
 }
