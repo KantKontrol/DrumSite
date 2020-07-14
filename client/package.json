@@ -33,5 +33,5 @@
 			"last 1 safari version"
 		]
 	},
-	"proxy": "https://git.heroku.com/dedrumroom.git"
+	"proxy": "http://localhost:3001"
 }

@@ -21,8 +21,12 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
+app.listen(PORT, () => {
+  console.log("🚀  Server server now on port", PORT, "👻 React App on Port 3000");
+});
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/drumTest", {
+
+/*mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/drumTest", {
   useNewUrlParser: true,
   useFindAndModify: false
 }).then(() => {
@@ -33,5 +37,5 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/drumTest", {
   });
 }).catch(err => {
   console.log(err);
-});
+});*/
 
