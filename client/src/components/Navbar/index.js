@@ -12,7 +12,7 @@ export default function Navbar(props){
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light  navbar-cus-color">
-            <a className="navbar-brand text-color" href="/">Logo Here</a>
+            <a className="navbar-brand text-color" href="/">Drum Decor</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
