@@ -24,7 +24,7 @@ export default function Products(){
 
     return (
         <div className="container-fluid push-footer">
-            <h1 className="mx-auto product-page-header" style={{ width: "fit-content" }}>Drum Creations</h1>
+            <h1 className="mx-auto product-page-header" style={{ width: "fit-content" }}>Drum Decor</h1>
             <div className="lineBreak"></div>
             {products.length > 0 ? <ProductDisplay products={products}/> : <img className="preloader" src="/images/preloader.gif" alt="Loading..." width="80px"></img>}
         </div>
