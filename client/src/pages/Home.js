@@ -13,7 +13,7 @@ export default function Home(){
             <Hero text="Welcome!" />
             <div className="container no-padding push-footer">
                 <RandomProducts />
-                <AboutJumbo lead={aboutLead} about={aboutBody} href="/about"/>
+                <AboutJumbo lead={aboutLead} about={aboutBody} href="/drums" atext="View Drums"/>
             </div>
         </div>
     );

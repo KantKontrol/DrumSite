@@ -4,6 +4,7 @@
     margin: 10px auto;
     border-radius: 5px;
     width: 100%;
+    box-shadow: 2px 2px 5px gray;
 }
 
 .title {
