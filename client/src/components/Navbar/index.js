@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import GlobalContext from "../../utils/GlobalContext";
+//import GlobalContext from "../../utils/GlobalContext";
 import "./index.css";
 
 

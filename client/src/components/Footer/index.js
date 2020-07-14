@@ -13,7 +13,7 @@ export default function Footer(props){
             </div>
 
             <div id="bottom-side-text">
-                <a href="https://www.skolltech.dev" target="_blank" rel="noopener noreferrer"><img src="/images/skolllogo.png" height="24px" width="24px" alt="SkollTech Logo"></img></a>
+                <a href="https://www.skolltech.dev" target="_blank" rel="noopener noreferrer" ><img src="/images/skolllogo.png" height="24px" width="24px" alt="SkollTech Logo" ></img></a>
             </div>
         </div>
     );
