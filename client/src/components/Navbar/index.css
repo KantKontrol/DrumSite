@@ -4,7 +4,12 @@
 }
 
 .text-color {
-    color: black;
-    text-shadow: 2px 2px 5px #ABEBD2;
+    color: black !important;
+    text-shadow: 2px 2px #ABEBD2;
     font-size: 1.65rem;
+}
+
+.text-color:hover{
+    color: gray !important;
+    
 }

@@ -30,7 +30,8 @@ code {
 .lineBreak {
   width: 80%;
   height: 10px;
-  background-color: #7C8483;
+  background-color: #ABEBD2;
+  box-shadow: 2px 2px 5px gray;
   margin: 10px auto;
 }
 
@@ -41,6 +42,11 @@ code {
 
 .push-footer {
   flex: 1 0 auto;
+}
+
+.product-page-header {
+  color: black !important;
+  text-shadow: 3px 2px 5px #ABEBD2;
 }
 
 
