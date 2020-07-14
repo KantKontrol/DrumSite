@@ -24,6 +24,9 @@ export default function Navbar(props){
                         <Link className="nav-link text-color" to="/drums">Drums</Link>
                     </li>
                     <li className="nav-item">
+                        <Link className="nav-link text-color" to="/contact">Contact</Link>
+                    </li>
+                    <li className="nav-item">
                         {/*<Link className="nav-link" to="/cart"><i className="fas fa-shopping-cart"></i><span className="badge badge-primary badge-pill">{c.numInCart}</span></Link>*/}
                     </li>
                 </ul>
