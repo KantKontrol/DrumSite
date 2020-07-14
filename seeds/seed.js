@@ -68,7 +68,7 @@ async function populateDatabase(){
     });
 }
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/drumTest", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://db:p57um8k3@ds011840.mlab.com:11840/heroku_d4f8mndc", {
     useNewUrlParser: true,
     useFindAndModify: false
 }).then(() => populateDatabase());
