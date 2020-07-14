@@ -1,3 +1,18 @@
 .jumbotron {
     box-shadow: 2px 2px 5px gray;
 }
+.jumbo-button-style{
+    background-color: #ABEBD2;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+.jumbo-button-style:hover{
+    background-color: rgb(175, 245, 218);
+    border: 2px solid #ABEBD2;
+    box-shadow: 2px 2px 5px gray;
+}
+.display-4 {
+    font-size: 5rem !important;
+}
+.lead{
+    font-size: 2rem !important;
+}
