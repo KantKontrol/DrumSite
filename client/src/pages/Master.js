@@ -2,7 +2,8 @@ import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "../pages/Home";
 import Products from "../pages/Products";
-import Cart from "./Cart";
+//import Cart from "./Cart";
+import Contact from "./Contact";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GlobalContext from "../utils/GlobalContext";
@@ -92,8 +93,11 @@ export default function Master(){
                     <Route path="/drums">
                         <Products />
                     </Route>
-                    <Route path="/cart">
+                    {/*<Route path="/cart">
                         <Cart />
+                    </Route>*/}
+                    <Route path="/contact">
+                        <Contact />
                     </Route>
                     <Route path="*">
                         <h1>NO FIND!</h1>
