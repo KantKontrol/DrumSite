@@ -7,9 +7,10 @@
     color: black !important;
     text-shadow: 2px 2px #ABEBD2;
     font-size: 1.65rem;
+    border-bottom: 2px solid #ffffff00;
 }
 
 .text-color:hover{
     color: gray !important;
-    
+    border-bottom: 2px solid #ABEBD2;
 }
