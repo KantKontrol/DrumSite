@@ -11,7 +11,7 @@ async function populateDatabase(){
         },
         {
             title: "Drum Table",
-            image: "/images/drum/2.jpeg",
+            image: "/images/drum/7.jpeg",
             desc: "a wonderful table",
             price: 125.00
         },
@@ -30,6 +30,24 @@ async function populateDatabase(){
         {
             title: "Drum Table",
             image: "/images/drum/5.jpeg",
+            desc: "a wonderful table",
+            price: 125.00
+        },
+        {
+            title: "Drum Lamp",
+            image: "/images/drum/9.jpeg",
+            desc: "A atmospheric lamp",
+            price: 55.00
+        },
+        {
+            title: "Drum Shelf",
+            image: "/images/drum/2.jpeg",
+            desc: "A simple artistic shelf",
+            price: 74.99
+        },
+        {
+            title: "Drum Table",
+            image: "/images/drum/8.jpeg",
             desc: "a wonderful table",
             price: 125.00
         },
