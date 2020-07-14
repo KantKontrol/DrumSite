@@ -99,7 +99,7 @@ export default function Master(){
                         <h1>NO FIND!</h1>
                     </Route>
                 </Switch>  
-                <Footer />             
+                <Footer name="Mark - Craftsman" email="m.fire343@gmail.com"/>             
             </Router>
         </GlobalContext.Provider>
     );
