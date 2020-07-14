@@ -17,9 +17,11 @@ export default function Products(){
     }, []);
 
     function getProducts(){
-        API.getAllProducts().then(res => {
+      /*  API.getAllProducts().then(res => {
             setProducts(res.data);
-        });
+        }); */
+        let data = API.getAllProducts();
+        setProducts(data);
     }
 
     return (

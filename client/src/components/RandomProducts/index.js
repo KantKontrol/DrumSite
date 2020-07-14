@@ -19,9 +19,11 @@ export default function RandomProducts(){
     }, []);
 
     function getLatestProducts(){
-        API.getLatestProducts().then(res => {
+        /*API.getLatestProducts().then(res => {
             setLatestProducts(res.data);
-        });
+        });*/
+        let data = API.getLatestProducts();
+        setLatestProducts(data);
     }
 
     return (
