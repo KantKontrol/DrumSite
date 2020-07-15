@@ -41,19 +41,22 @@ const data = [
         title: "Drum Shelf",
         image: "/images/drum/2.jpeg",
         desc: "A simple artistic shelf",
-        price: 74.99
+        price: 74.99,
+        i: true
     },
     {
         title: "Drum Table",
         image: "/images/drum/8.jpeg",
         desc: "a wonderful table",
-        price: 125.00
+        price: 125.00,
+        i: true
     },
     {
         title: "Drum Lamp",
         image: "/images/drum/6.jpeg",
         desc: "A atmospheric lamp",
-        price: 55.00
+        price: 55.00,
+        i: true
     }
 ];
 
@@ -64,7 +67,7 @@ const API = {
     },
     getLatestProducts: function(){
         //return axios.get("/api/latest");
-        return data.splice(data.length-3, data.length);
+        return data.filter(e => e.i == true);
     }
 }
 
