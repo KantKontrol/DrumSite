@@ -1,5 +1,5 @@
 
-# Drum-Site (De Drum Room) ![alt](https://img.shields.io/badge/build-passing-brightgreen)
+# Drum-Site (De Drum Room) ![alt](https://camo.githubusercontent.com/d907121626e022585b7cbdc63946e8b057b92b92/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7061636b6167652d6a736f6e2f762f57617272696f726f665a61726f6e612f476f6f642d524541444d452d47656e657261746f72)
 
 ## Table of Contents
 
