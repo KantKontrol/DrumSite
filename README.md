@@ -7,7 +7,7 @@
 * [Installation](#installation)
 * [Credits](#credits)
 
-![alt]()
+![alt](https://github.com/KantKontrol/DrumSite/blob/master/readmefiles/dedrumroomgif.gif?raw=true)
 
 ## Description
 De Drum Room is a website I made for a client. It has a very simple design, and originally had made use of a cart system. This was changed when the clients need changed, yet the code is still there to be used if need be.
