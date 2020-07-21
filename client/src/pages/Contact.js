@@ -8,7 +8,7 @@ export default function Contact(){
         <div className="container-fluid push-footer">
             <div className="row">
                 <div className="col-1"></div>
-                <div className="col-10">
+                <div className="col-sm-12 col-md-10">
 
                 <div className="jumbotron jumbotron-fluid">
                     <div className="container">
